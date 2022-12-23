@@ -1,2 +1,3 @@
 # iaas tutorial 
-source control code repo
+source control code repo for fidelis' ansible lab
+
