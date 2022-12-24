@@ -10,9 +10,12 @@ all:
             192.168.202.133 apache_package=httpd php_package=php:
 
         db_servers:
+            192.168.202.131 mariadb_package=mariadb:
+            192.168.202.133 mariadb_package=mariadb-server:
+
+        file_servers:
             192.168.202.131:
+            192.168.202.132:
             192.168.202.133:
-
-
 
 
