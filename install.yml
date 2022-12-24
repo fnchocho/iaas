@@ -1,0 +1,21 @@
+- name: install or uninstall packages as need be
+  hosts: web servers
+  become: true
+  tasks:
+
+  - name: update repository index
+    apt:
+      update_cache: yes
+
+  - name: install apache2 package
+    apt:
+      name: apache2
+      state: latest
+    ignore_errors: true
+
+  - name: install php support for apache
+    apt:
+      name: libapache2-mod-php
+      state: latest
+
+
