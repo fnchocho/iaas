@@ -1,8 +1,7 @@
-- name:
-    hosts: all
-    become: true
-    pre_tasks:
-
+- name: Up date servers re-task
+  hosts: all
+  become: true
+  pre_tasks:
     - name: install updates (CentOS)
       dnf:
         update_only: yes
@@ -11,23 +10,22 @@
 
     - name: install updates (Ubuntu)
       apt:
-        upgrade: dist
-        update_cache: yes
+         upgrade: dist
+         update_cache: yes
       when: ansible_distribution == "Ubuntu"
 
-    - name: install or uninstall packages as need be
-      hosts: web_servers
-      become: true
-      tasks:
-
-       - name: install latest version of apache and php
-         ansible.builtin.package:
-           name:
-            - "{{ apache_package }}"
-            - "{{ php_package }}"
-           state: latest
-           update_cache: yes
-           ignore_errors: true
+- name: install or uninstall packages as need be
+  hosts: web_servers
+  become: true
+  tasks:
+  - name: install latest version of apache and php
+    ansible.builtin.package:
+     name:
+        - "{{ apache_package }}"
+        - "{{ php_package }}"
+     state: latest
+     update_cache: yes
+    ignore_errors: true
 
 
 
