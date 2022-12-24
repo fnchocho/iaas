@@ -27,8 +27,26 @@
      update_cache: yes
     ignore_errors: true
 
+- name: install mariadb packages
+  hosts: db_servers
+  become: true
+  tasks:
+  - name: install latest version of mariadb
+    ansible.builtin.package:
+     name:
+        - "{{ mariadb_package }}"
+     state: late
+    ignore_errors: true
 
-
+- name: install samba packages
+  hosts: file_servers
+  become: true
+  tasks:
+  - name: install latest version of samba
+    ansible.builtin.package:
+     name: samba
+     state: latest
+    ignore_errors: true
 
 
 
