@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="modify to fidelis lab">
-      <change afterPath="$PROJECT_DIR$/inventory/host_vars.yml" afterDir="false" />
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add host file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/host_vars.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/host_vars.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671838991350</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add host file">
+      <created>1671839975606</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671839975606</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +169,7 @@
     <MESSAGE value="Add add devfile" />
     <MESSAGE value="initial set up files" />
     <MESSAGE value="modify to fidelis lab" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify to fidelis lab" />
+    <MESSAGE value="Add host file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add host file" />
   </component>
 </project>
