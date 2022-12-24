@@ -1,5 +1,5 @@
 - name: install or uninstall packages as need be
-  hosts: web servers
+  hosts: web_servers
   become: true
   tasks:
 
