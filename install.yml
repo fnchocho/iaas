@@ -1,4 +1,4 @@
-- name: Up date servers re-task
+- name: Up date servers pre-task
   hosts: all
   become: true
   pre_tasks:
@@ -15,17 +15,17 @@
          update_cache: yes
       when: ansible_distribution == "Ubuntu"
 
-- name: install or uninstall packages as need be
+- name: install apache and php packages
   hosts: web_servers
   become: true
   tasks:
   - name: install latest version of apache and php
     ansible.builtin.package:
-     name:
+      name:
         - "{{ apache_package }}"
         - "{{ php_package }}"
-     state: latest
-     update_cache: yes
+      state: latest
+      update_cache: yes
     ignore_errors: true
 
 - name: install mariadb packages
@@ -34,20 +34,20 @@
   tasks:
   - name: install latest version of mariadb
     ansible.builtin.package:
-     name:
-        - "{{ mariadb_package }}"
-     state: late
+      name:
+      - "{{ mariadb_package }}"
+      state: late
     ignore_errors: true
 
 - name: install samba packages
   hosts: file_servers
   become: true
   tasks:
-  - name: install latest version of samba
-    ansible.builtin.package:
-     name: samba
-     state: latest
-    ignore_errors: true
+    - name: install latest version of samba
+      ansible.builtin.package:
+        name: samba
+        state: latest
+      ignore_errors: true
 
 
 
