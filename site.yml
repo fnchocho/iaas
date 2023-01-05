@@ -1,7 +1,7 @@
 - name: Up date servers pre-task
   hosts: all
   become: true
-  tasks:
+  pre_tasks:
 
     - name: install updates (CentOS)
       dnf:
