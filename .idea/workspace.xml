@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add host file">
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Make playbook a pre-task to update servers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/host_vars.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/host_vars.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="iaaas" type="PythonConfigurationType" factoryName="Python">
       <module name="iaas" />
@@ -138,7 +142,196 @@
       <option name="project" value="LOCAL" />
       <updated>1671839975606</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modified host vars">
+      <created>1671840992406</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671840992406</updated>
+    </task>
+    <task id="LOCAL-00007" summary="modified host vars">
+      <created>1671841118205</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671841118205</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create inventory file">
+      <created>1671841660889</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671841660889</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create inventory file">
+      <created>1671842230496</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671842230496</updated>
+    </task>
+    <task id="LOCAL-00010" summary="modify inventory file into block types">
+      <created>1671842265239</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671842265239</updated>
+    </task>
+    <task id="LOCAL-00011" summary="modify inventory file into block types">
+      <created>1671842425097</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671842425097</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add ansible cfg file">
+      <created>1671843341960</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671843341960</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add ansible cfg file">
+      <created>1671843423294</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671843423294</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Clean host file of OS-types">
+      <created>1671844250570</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671844250570</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Clean host file of server use-class">
+      <created>1671844358419</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671844358419</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Clean host file of server use-class">
+      <created>1671850241055</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671850241055</updated>
+    </task>
+    <task id="LOCAL-00017" summary="create web-servers children hosts">
+      <created>1671850609932</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671850609932</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add install php support packages for apache2">
+      <created>1671850671404</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1671850671404</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add package update pre-task">
+      <created>1671858102719</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671858102720</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Create db_servers group">
+      <created>1671858153153</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1671858153153</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Create db_servers group">
+      <created>1671858726660</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1671858726660</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Create file_servers group">
+      <created>1671859470387</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1671859470387</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Create task to install samba">
+      <created>1671859638381</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1671859638381</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Make centos update to ignore errors">
+      <created>1672933242777</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1672933242778</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Reorganize playbook by separating plays">
+      <created>1672934805294</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672934805294</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Create site.yml playbook">
+      <created>1672955333737</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1672955333737</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Make updates as pre-task">
+      <created>1672955792695</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1672955792695</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Make inventory.yml file">
+      <created>1672956279265</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1672956279265</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add hosts 135 and 136">
+      <created>1673635527716</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1673635527716</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add hosts 135 and 136">
+      <created>1673635826735</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1673635826735</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Remove host 132 and 133">
+      <created>1673637047009</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1673637047009</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Make playbook a pre-task to update servers">
+      <created>1673641207413</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1673641207413</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +363,26 @@
     <MESSAGE value="initial set up files" />
     <MESSAGE value="modify to fidelis lab" />
     <MESSAGE value="Add host file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add host file" />
+    <MESSAGE value="modified host vars" />
+    <MESSAGE value="Create inventory file" />
+    <MESSAGE value="modify inventory file into block types" />
+    <MESSAGE value="Add ansible cfg file" />
+    <MESSAGE value="Clean host file of OS-types" />
+    <MESSAGE value="Clean host file of server use-class" />
+    <MESSAGE value="create web-servers children hosts" />
+    <MESSAGE value="Add install php support packages for apache2" />
+    <MESSAGE value="Add package update pre-task" />
+    <MESSAGE value="Create db_servers group" />
+    <MESSAGE value="Create file_servers group" />
+    <MESSAGE value="Create task to install samba" />
+    <MESSAGE value="Make centos update to ignore errors" />
+    <MESSAGE value="Reorganize playbook by separating plays" />
+    <MESSAGE value="Create site.yml playbook" />
+    <MESSAGE value="Make updates as pre-task" />
+    <MESSAGE value="Make inventory.yml file" />
+    <MESSAGE value="Add hosts 135 and 136" />
+    <MESSAGE value="Remove host 132 and 133" />
+    <MESSAGE value="Make playbook a pre-task to update servers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make playbook a pre-task to update servers" />
   </component>
 </project>
