@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Make playbook a pre-task to update servers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Enable base_setup.yml skip failed tasks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -331,7 +329,28 @@
       <option name="project" value="LOCAL" />
       <updated>1673641207413</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Rename playbook to base_setup">
+      <created>1673641330913</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1673641330913</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Rename playbook to base_setup">
+      <created>1673641340266</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1673641340266</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Enable base_setup.yml skip failed tasks">
+      <created>1673641545157</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1673641545157</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,8 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add initial state files" />
-    <MESSAGE value="Add add devfile" />
     <MESSAGE value="initial set up files" />
     <MESSAGE value="modify to fidelis lab" />
     <MESSAGE value="Add host file" />
@@ -383,6 +400,8 @@
     <MESSAGE value="Add hosts 135 and 136" />
     <MESSAGE value="Remove host 132 and 133" />
     <MESSAGE value="Make playbook a pre-task to update servers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make playbook a pre-task to update servers" />
+    <MESSAGE value="Rename playbook to base_setup" />
+    <MESSAGE value="Enable base_setup.yml skip failed tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enable base_setup.yml skip failed tasks" />
   </component>
 </project>

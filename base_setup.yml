@@ -3,7 +3,7 @@
   become: true
   pre_tasks:
     - name: install updates (CentOS)
-      dnf:
+      yum:
         update_only: yes
         update_cache: yes
       when: ansible_distribution == "CentOS"
@@ -14,6 +14,13 @@
          upgrade: dist
          update_cache: yes
       when: ansible_distribution == "Ubuntu"
+      ignore_errors: true
+
+    - name: install updates (RedHat)
+      dnf:
+        update_only: yes
+        update_cache: yes
+      when: ansible_distribution_major_version == "8"
       ignore_errors: true
 
 
