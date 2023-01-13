@@ -14,6 +14,7 @@
          upgrade: dist
          update_cache: yes
       when: ansible_distribution == "Ubuntu"
+      ignore_errors: true
 
 
 
