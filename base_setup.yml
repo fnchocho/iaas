@@ -25,7 +25,7 @@
 
   tasks:
     - name: Add user cofe
-      ansible_user_builtin:
+      ansible.builtin.user:
         name: cofe
         comment: Cofe Vargo
         uid: 1020
