@@ -1,27 +1,22 @@
 all:
     hosts:
         192.168.202.131:
-        192.168.202.132:
-        192.168.202.133:
         192.168.202.135:
         192.168.202.136:
 
     children:
         web_servers:
             192.168.202.131 apache_package=apache2 php_package=libapache2-mod-php:
-            192.168.202.133 apache_package=httpd php_package=php:
             192.168.202.135 apache_package=httpd php_package=php:
             192.168.202.136 apache_package=httpd php_package=php:
 
         db_servers:
             192.168.202.131 mariadb_package=mariadb:
-            192.168.202.133 mariadb_package=mariadb-server:
             192.168.202.135 mariadb_package=mariadb-server:
             192.168.202.136 mariadb_package=mariadb-server:
 
         file_servers:
             192.168.202.131:
-            192.168.202.132:
             192.168.202.133:
             192.168.202.135:
             192.168.202.136:
