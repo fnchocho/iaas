@@ -29,7 +29,6 @@
         name: cofe
         comment: Cofe Vargo
         uid: 1020
-        home: cofe
         shell: /bin/bash
 
 
