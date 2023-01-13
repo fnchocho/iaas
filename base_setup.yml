@@ -23,5 +23,14 @@
       when: ansible_distribution_major_version == "8"
       ignore_errors: true
 
+  tasks:
+    - name: Add user cofe
+      ansible_user_builtin:
+        name: cofe
+        comment: Cofe Vargo
+        uid: 1020
+        groups: cofe
+        append: wheel
+
 
 
