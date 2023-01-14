@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Enable base_setup.yml skip failed tasks" />
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create add ansible directory task">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base_setup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/base_setup.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/inventory.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventory.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -350,7 +354,91 @@
       <option name="project" value="LOCAL" />
       <updated>1673641545157</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Add condition for rhel8 as major version">
+      <created>1673641846808</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1673641846808</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Create play to add user cofe">
+      <created>1673644145848</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1673644145848</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Create play to add user cofe">
+      <created>1673644250045</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1673644250045</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Correct play error and remove append group for cofe user">
+      <created>1673644386777</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1673644386777</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Correct play error and remove cofe group">
+      <created>1673644619264</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1673644619264</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Correct play error and remove home cofe">
+      <created>1673644691979</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1673644691979</updated>
+    </task>
+    <task id="LOCAL-00042" summary="create play to configure web_servers">
+      <created>1673646881557</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1673646881557</updated>
+    </task>
+    <task id="LOCAL-00043" summary="create web_servers inventory">
+      <created>1673647432912</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1673647432912</updated>
+    </task>
+    <task id="LOCAL-00044" summary="create web_servers inventory">
+      <created>1673647627622</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1673647627622</updated>
+    </task>
+    <task id="LOCAL-00045" summary="create file play added">
+      <created>1673648253098</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1673648253098</updated>
+    </task>
+    <task id="LOCAL-00046" summary="modify create file task">
+      <created>1673648464720</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1673648464720</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Create add ansible directory task">
+      <created>1673723315465</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1673723315465</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,16 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial set up files" />
-    <MESSAGE value="modify to fidelis lab" />
-    <MESSAGE value="Add host file" />
-    <MESSAGE value="modified host vars" />
-    <MESSAGE value="Create inventory file" />
-    <MESSAGE value="modify inventory file into block types" />
-    <MESSAGE value="Add ansible cfg file" />
-    <MESSAGE value="Clean host file of OS-types" />
-    <MESSAGE value="Clean host file of server use-class" />
-    <MESSAGE value="create web-servers children hosts" />
     <MESSAGE value="Add install php support packages for apache2" />
     <MESSAGE value="Add package update pre-task" />
     <MESSAGE value="Create db_servers group" />
@@ -402,6 +480,16 @@
     <MESSAGE value="Make playbook a pre-task to update servers" />
     <MESSAGE value="Rename playbook to base_setup" />
     <MESSAGE value="Enable base_setup.yml skip failed tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enable base_setup.yml skip failed tasks" />
+    <MESSAGE value="Add condition for rhel8 as major version" />
+    <MESSAGE value="Create play to add user cofe" />
+    <MESSAGE value="Correct play error and remove append group for cofe user" />
+    <MESSAGE value="Correct play error and remove cofe group" />
+    <MESSAGE value="Correct play error and remove home cofe" />
+    <MESSAGE value="create play to configure web_servers" />
+    <MESSAGE value="create web_servers inventory" />
+    <MESSAGE value="create file play added" />
+    <MESSAGE value="modify create file task" />
+    <MESSAGE value="Create add ansible directory task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create add ansible directory task" />
   </component>
 </project>
