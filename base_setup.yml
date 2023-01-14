@@ -10,6 +10,7 @@
       ignore_errors: true
 
     - name: install updates (Ubuntu)
+      tags: always,ubuntu
       apt:
          upgrade: dist
          update_cache: yes
@@ -17,6 +18,7 @@
       ignore_errors: true
 
     - name: install updates (RedHat)
+      tags: RedHat
       dnf:
         update_only: yes
         update_cache: yes
@@ -43,6 +45,27 @@
         path: /etc/ansible-testfile.txt
         state: touch
         mode: u=rwx,g=rw,o=rw
+
+    - name: Install apache and php for ubuntu
+      tags: apache2,ubuntu
+      hosts: web_server
+      become: true
+      apt:
+        name:
+          - apache2
+          - libapache2-mod-php
+        state: latest
+
+    - name: Copy default file for site
+      hosts: web_servers
+      tags: apache2,ubuntu
+      copy:
+        src: /files/default_site.html
+        dest: /var/ww/html/index.html
+        owner: root
+        group: root
+        mode: '0644'
+
 
 
 
