@@ -46,9 +46,11 @@
         state: touch
         mode: u=rwx,g=rw,o=rw
 
+- hosts: web_servers
+  become: true
+  tasks:
     - name: Install apache and php for ubuntu
       tags: apache2,ubuntu
-      hosts: web_server
       become: true
       apt:
         name:
@@ -57,14 +59,14 @@
         state: latest
 
     - name: Copy default file for site
-      hosts: web_servers
       tags: apache2,ubuntu
       copy:
-        src: /files/default_site.html
-        dest: /var/ww/html/index.html
+        src: default_site.html
+        dest: /var/www/html/index.html
         owner: root
         group: root
         mode: '0644'
+      when: ansible_distribution == "Ubuntu"
 
 
 
