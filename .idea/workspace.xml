@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add owner and group to ansible directory" />
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add apache2 site file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +26,9 @@
       </map>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/base_setup.yml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -33,17 +38,20 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas",
-    "settings.editor.selected.configurable": "configurable.group.project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fidelis/PycharmProjects/iaas&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.project&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/files" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -104,27 +112,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Add initial state files">
-      <created>1671229658592</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1671229658592</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add add devfile">
-      <created>1671556361946</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1671556361946</updated>
-    </task>
-    <task id="LOCAL-00003" summary="initial set up files">
-      <created>1671556575043</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1671556575043</updated>
     </task>
     <task id="LOCAL-00004" summary="modify to fidelis lab">
       <created>1671838991350</created>
@@ -448,7 +435,28 @@
       <option name="project" value="LOCAL" />
       <updated>1673723948540</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="No change">
+      <created>1673724876997</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1673724876998</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Add apache2 site file">
+      <created>1673726986819</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1673726986819</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Add apache2 site file">
+      <created>1673728166027</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1673728166028</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -475,8 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add package update pre-task" />
-    <MESSAGE value="Create db_servers group" />
     <MESSAGE value="Create file_servers group" />
     <MESSAGE value="Create task to install samba" />
     <MESSAGE value="Make centos update to ignore errors" />
@@ -500,6 +506,8 @@
     <MESSAGE value="modify create file task" />
     <MESSAGE value="Create add ansible directory task" />
     <MESSAGE value="Add owner and group to ansible directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add owner and group to ansible directory" />
+    <MESSAGE value="No change" />
+    <MESSAGE value="Add apache2 site file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add apache2 site file" />
   </component>
 </project>
