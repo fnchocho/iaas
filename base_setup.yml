@@ -36,8 +36,6 @@
       file:
         path: /home/ansible
         state: directory
-        owner: ansible
-        group: ansible
         mode: '0755'
 
     - name: Create a file in /etc/ directory
