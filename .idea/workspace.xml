@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create add ansible directory task">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_setup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/base_setup.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/inventory.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventory.yml" afterDir="false" />
-    </list>
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add owner and group to ansible directory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -438,7 +434,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673723315465</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Add owner and group to ansible directory">
+      <created>1673723689086</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1673723689086</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Add owner and group to ansible directory">
+      <created>1673723948540</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1673723948540</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -465,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add install php support packages for apache2" />
     <MESSAGE value="Add package update pre-task" />
     <MESSAGE value="Create db_servers group" />
     <MESSAGE value="Create file_servers group" />
@@ -490,6 +499,7 @@
     <MESSAGE value="create file play added" />
     <MESSAGE value="modify create file task" />
     <MESSAGE value="Create add ansible directory task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create add ansible directory task" />
+    <MESSAGE value="Add owner and group to ansible directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add owner and group to ansible directory" />
   </component>
 </project>
