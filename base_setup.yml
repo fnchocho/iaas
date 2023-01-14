@@ -32,13 +32,17 @@
         shell: /bin/bash
         create_home: true
 
+    - name: Create ansible home directory
+      file:
+        path: /home/ansible
+        state: directory
+        mode: '0755'
+
     - name: Create a file in /etc/ directory
       file:
         path: /etc/ansible-testfile.txt
         state: touch
-        mode: 0755
-
-
+        mode: u=rwx,g=rw,o=rw
 
 
 
