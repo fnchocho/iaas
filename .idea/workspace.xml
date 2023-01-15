@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add apache2 site file">
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add play to manage apache service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,14 +38,14 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/fidelis/PycharmProjects/iaas&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.project&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas",
+    "settings.editor.selected.configurable": "settings.sync"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -112,34 +112,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00004" summary="modify to fidelis lab">
-      <created>1671838991350</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1671838991350</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add host file">
-      <created>1671839975606</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1671839975606</updated>
-    </task>
-    <task id="LOCAL-00006" summary="modified host vars">
-      <created>1671840992406</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1671840992406</updated>
-    </task>
-    <task id="LOCAL-00007" summary="modified host vars">
-      <created>1671841118205</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1671841118205</updated>
     </task>
     <task id="LOCAL-00008" summary="Create inventory file">
       <created>1671841660889</created>
@@ -456,7 +428,35 @@
       <option name="project" value="LOCAL" />
       <updated>1673728166028</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Add new files">
+      <created>1673728733152</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1673728733152</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Sub classify servers">
+      <created>1673732177634</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1673732177634</updated>
+    </task>
+    <task id="LOCAL-00055" summary="create web_servers.yml">
+      <created>1673732701774</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1673732701775</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Add play to manage apache service">
+      <created>1673808426269</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1673808426270</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,10 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create file_servers group" />
-    <MESSAGE value="Create task to install samba" />
-    <MESSAGE value="Make centos update to ignore errors" />
-    <MESSAGE value="Reorganize playbook by separating plays" />
     <MESSAGE value="Create site.yml playbook" />
     <MESSAGE value="Make updates as pre-task" />
     <MESSAGE value="Make inventory.yml file" />
@@ -508,6 +504,10 @@
     <MESSAGE value="Add owner and group to ansible directory" />
     <MESSAGE value="No change" />
     <MESSAGE value="Add apache2 site file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add apache2 site file" />
+    <MESSAGE value="Add new files" />
+    <MESSAGE value="Sub classify servers" />
+    <MESSAGE value="create web_servers.yml" />
+    <MESSAGE value="Add play to manage apache service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add play to manage apache service" />
   </component>
 </project>
