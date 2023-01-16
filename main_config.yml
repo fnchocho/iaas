@@ -4,7 +4,7 @@
   hosts: all
   become: true
   pre_tasks:
-  - name: install updates (CentOS)
+  - name: updates all hosts
     package:
       update_cache: yes
     changed_when: false          # Allow control over what is considered as change
