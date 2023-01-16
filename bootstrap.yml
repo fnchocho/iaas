@@ -4,14 +4,14 @@
   hosts: all
   become: true
   pre_tasks:
-  - name: install updates (CentOS)
+  - name: Update repo cache (CentOS)
     yum:
       update_only: yes
       update_cache: yes
     when: ansible_distribution == "CentOS"
     ignore_errors: true
 
-  - name: install updates (Ubuntu)
+  - name: Update repo cache (Ubuntu)
     tags: always,ubuntu
     apt:
       upgrade: dist
@@ -19,7 +19,7 @@
     when: ansible_distribution == "Ubuntu"
     ignore_errors: true
 
-  - name: install updates (RedHat)
+  - name: Update repo cache (RedHat)
     tags: RedHat
     dnf:
       update_only: yes

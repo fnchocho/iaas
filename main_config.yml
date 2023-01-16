@@ -10,8 +10,8 @@
     changed_when: false          # Allow control over what is considered as change
     ignore_errors: true
 
-
-- hosts: all
+- name: install base configuration
+  hosts: all
   become: true
   roles:
     - base
