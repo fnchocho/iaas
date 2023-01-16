@@ -57,22 +57,34 @@
         - libapache2-mod-php
       state: latest
     when: ansible_distribution == "Ubuntu"
+    ignore_errors: true
 
   - name: Install httpd and php for centos and rhel
     tags: httpd,apache,centos,rhel
     package:
       name:
-        - httpd
+        - http
         - php
       state: latest
     when: ansible_distribution == "CentOS","rhel"
+    ignore_errors: true
 
-  - name: start httpd (centos,rhel)
+  - name: Ensure firewalld and httpd are running (centos,rhel)
     tags: apache,httpd,centos,rhel
     service:
-      name: httpd
+      name: "{{item}}"
       state: started
+      enabled: yes
+    with_items:
+      - firewalld
+      - httpd
     when: ansible_distribution == "CentOS","rhel"
+
+  - name: permit traffic in default zone for https service
+    ansible.posix.firewalld:
+      service: http,https
+      permanent: yes
+      state: enabled
 
   - name: Copy default file for site
     tags: apache2,ubuntu,centos,rhel
