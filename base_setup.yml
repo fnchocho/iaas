@@ -59,17 +59,17 @@
     when: ansible_distribution == "Ubuntu"
     ignore_errors: true
 
-  - name: Install httpd and php for centos and rhel
+  - name: Install latest httpd and php for centos and rhel
     tags: httpd,apache,centos,rhel
     package:
       name:
-        - http
+        - httpd
         - php
       state: latest
     when: ansible_distribution == "CentOS","rhel"
     ignore_errors: true
 
-  - name: Ensure firewalld and httpd are running (centos,rhel)
+  - name: Start firewalld and httpd (centos,rhel)
     tags: apache,httpd,centos,rhel
     service:
       name: "{{item}}"
@@ -80,10 +80,12 @@
       - httpd
     when: ansible_distribution == "CentOS","rhel"
 
-  - name: permit traffic in default zone for https service
+  - name: create firewalld rule for apache services to loop start and enabled on boot up
     ansible.posix.firewalld:
       service: http,https
+      zone: public
       permanent: yes
+      immediate: yes
       state: enabled
 
   - name: Copy default file for site
