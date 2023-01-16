@@ -39,7 +39,7 @@
       groups: root, wheel
       append: yes
 
-  - name: Add ssh key for cofe
+  - name: Add ssh key for cofe # to enable password less log in to server
     tags: always
     authorized_key:
       user: cofe
