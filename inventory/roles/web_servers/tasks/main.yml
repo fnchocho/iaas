@@ -1,0 +1,24 @@
+- name: Install apache and php packages
+  tags: apache2,ubuntu
+  package:
+    name: "{{ apache_package }}"
+    state: latest
+
+- name: Start firewalld and httpd (centos,rhel)
+  tags: apache,httpd,centos,rhel
+  service:
+    name: "{{ item }}"
+    state: started
+    enabled: yes
+  with_items:
+      - firewalld
+      - httpd
+
+- name: Copy default file for site
+  tags: apache2,ubuntu,centos,rhel
+  copy:
+      src: default_site.html
+      dest: /var/www/html/index.html
+      owner: root
+      group: root
+      mode: '0644'
