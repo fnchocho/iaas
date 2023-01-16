@@ -80,14 +80,6 @@
       - httpd
     when: ansible_distribution == "CentOS","rhel"
 
-  - name: create firewalld rule for apache services to loop start and enabled on boot up
-    ansible.posix.firewalld:
-      service: httpd
-      zone: public
-      permanent: yes
-      immediate: yes
-      state: enabled
-
   - name: Copy default file for site
     tags: apache2,ubuntu,centos,rhel
     copy:
