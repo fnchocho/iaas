@@ -1,0 +1,52 @@
+# This script is meant to run after boostrap.yml initial configuration run
+
+- name: Pre-task up date all servers
+  hosts: all
+  become: true
+  pre_tasks:
+  - name: install updates (CentOS)
+    yum:
+      update_cache: yes
+    changed_when: false          # Allow control over what is considered as change
+    when: ansible_distribution == "CentOS"
+    ignore_errors: true
+
+  - name: install updates (Ubuntu)
+    tags: always,ubuntu
+    apt:
+      update_cache: yes
+    changed_when: false
+    when: ansible_distribution == "Ubuntu"
+    ignore_errors: true
+
+  - name: install updates (RedHat)
+    tags: RedHat
+    dnf:
+      update_only: yes
+      update_cache: yes
+    changed_when: false
+    when: ansible_distribution_major_version == "8"
+    ignore_errors: true
+
+- hosts: all
+  become: true
+  roles:
+    - base
+
+- hosts: web_servers
+  become: true
+  roles:
+    - web_servers
+
+- hosts: db_servers
+  become: true
+  roles:
+    - db_servers
+
+- hosts: file_servers
+  become: true
+  roles:
+    - file_servers
+
+
+
