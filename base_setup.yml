@@ -1,0 +1,106 @@
+- name: Up date servers pre-task
+  hosts: all
+  become: true
+  pre_tasks:
+  - name: install updates (CentOS)
+    yum:
+      update_only: yes
+      update_cache: yes
+    when: ansible_distribution == "CentOS"
+    ignore_errors: true
+
+  - name: install updates (Ubuntu)
+    tags: always,ubuntu
+    apt:
+      upgrade: dist
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
+    ignore_errors: true
+
+  - name: install updates (RedHat)
+    tags: RedHat
+    dnf:
+      update_only: yes
+      update_cache: yes
+    when: ansible_distribution_major_version == "8"
+    ignore_errors: true
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Add user cofe
+    ansible.builtin.user:
+      name: cofe
+      comment: Cofe Vargo
+      uid: 1020
+      shell: /bin/bash
+      create_home: true
+
+  - name: Create ansible home directory
+    file:
+      path: /home/ansible
+      state: directory
+      mode: '0755'
+
+  - name: Create a file in /etc/ directory
+    file:
+      path: /etc/ansible-testfile.txt
+      state: touch
+      mode: u=rwx,g=rw,o=rw
+
+  - name: Install apache and php for ubuntu
+    tags: apache2,ubuntu
+    apt:
+      name:
+        - apache2
+        - libapache2-mod-php
+      state: latest
+    when: ansible_distribution == "Ubuntu"
+    ignore_errors: true
+
+  - name: Install latest httpd and php for centos and rhel
+    tags: httpd,apache,centos,rhel
+    package:
+      name:
+        - httpd
+        - php
+      state: latest
+    when: ansible_distribution == "CentOS","rhel"
+    ignore_errors: true
+
+  - name: Start firewalld and httpd (centos,rhel)
+    tags: apache,httpd,centos,rhel
+    service:
+      name: "{{item}}"
+      state: started
+      enabled: yes
+    with_items:
+      - firewalld
+      - httpd
+    when: ansible_distribution == "CentOS","rhel"
+
+  - name: Copy default file for site
+    tags: apache2,ubuntu,centos,rhel
+    copy:
+      src: default_site.html
+      dest: /var/www/html/index.html
+      owner: root
+      group: root
+      mode: '0644'
+
+  - name: Install unzip
+    package:
+      name: unzip
+
+  - name: install terraform
+    unarchive:   # module to unzip file after download
+      src: https://releases.hashicorp.com/terraform/1.3.7/terraform_1.3.7_linux_arm64.zip
+      dest: /usr/local/bin
+      remote_src: yes   # Downloaded from the internet
+      mode: 0755
+      owner: root
+      group: root
+
+
+
