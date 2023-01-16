@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add play to manage apache service">
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Separate web_servers' plays">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_setup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/base_setup.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/inventory.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventory.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +42,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/fidelis/PycharmProjects/iaas&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.gutterIcons&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -114,13 +113,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Create inventory file">
-      <created>1671842230496</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1671842230496</updated>
     </task>
     <task id="LOCAL-00010" summary="modify inventory file into block types">
       <created>1671842265239</created>
@@ -458,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673809667580</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Separate web_servers' plays">
+      <created>1673893704337</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1673893704338</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -485,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create site.yml playbook" />
     <MESSAGE value="Make updates as pre-task" />
     <MESSAGE value="Make inventory.yml file" />
     <MESSAGE value="Add hosts 135 and 136" />
@@ -510,6 +508,7 @@
     <MESSAGE value="Sub classify servers" />
     <MESSAGE value="create web_servers.yml" />
     <MESSAGE value="Add play to manage apache service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add play to manage apache service" />
+    <MESSAGE value="Separate web_servers' plays" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separate web_servers' plays" />
   </component>
 </project>
