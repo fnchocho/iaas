@@ -82,7 +82,7 @@
 
   - name: create firewalld rule for apache services to loop start and enabled on boot up
     ansible.posix.firewalld:
-      service: http,https
+      service: httpd
       zone: public
       permanent: yes
       immediate: yes
