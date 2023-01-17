@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Eliminate redundant plays">
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="mariadb name corrected and other plays cleaned">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_setup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/base_setup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,13 +118,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Remove host 132 and 133">
-      <created>1673637047009</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1673637047009</updated>
     </task>
     <task id="LOCAL-00032" summary="Make playbook a pre-task to update servers">
       <created>1673641207413</created>
@@ -462,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673970859928</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="mariadb name corrected and other plays cleaned">
+      <created>1673982246470</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1673982246470</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="No change" />
     <MESSAGE value="Add apache2 site file" />
     <MESSAGE value="Add new files" />
     <MESSAGE value="Sub classify servers" />
@@ -514,6 +513,7 @@
     <MESSAGE value="Add handlers file for httpd" />
     <MESSAGE value="Define apache_service variable" />
     <MESSAGE value="Eliminate redundant plays" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminate redundant plays" />
+    <MESSAGE value="mariadb name corrected and other plays cleaned" />
+    <option name="LAST_COMMIT_MESSAGE" value="mariadb name corrected and other plays cleaned" />
   </component>
 </project>
