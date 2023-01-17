@@ -1,4 +1,4 @@
-- name: restart httpd
+- name: restart_apache
   service:
-    name: httpd
-    state: restart
+    name: " {{ apache_service}} "
+    state: restarted

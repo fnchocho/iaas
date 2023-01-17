@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Update main_config files" />
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add handlers file for httpd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,13 +115,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Make inventory.yml file">
-      <created>1672956279265</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1672956279265</updated>
     </task>
     <task id="LOCAL-00029" summary="Add hosts 135 and 136">
       <created>1673635527716</created>
@@ -459,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673908760957</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Add handlers file for httpd">
+      <created>1673966798284</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1673966798284</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -486,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modify create file task" />
     <MESSAGE value="Create add ansible directory task" />
     <MESSAGE value="Add owner and group to ansible directory" />
     <MESSAGE value="No change" />
@@ -511,6 +510,7 @@
     <MESSAGE value="Update role for web_servers" />
     <MESSAGE value="Update main_config file" />
     <MESSAGE value="Update main_config files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update main_config files" />
+    <MESSAGE value="Add handlers file for httpd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add handlers file for httpd" />
   </component>
 </project>
