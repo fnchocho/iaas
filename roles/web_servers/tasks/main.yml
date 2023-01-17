@@ -1,7 +1,10 @@
 - name: Install apache and php packages
   tags: apache2,ubuntu
   package:
-    name: "{{ apache_package }}"
+    name:
+      - "{{ apache_package }}"
+      - "{{ php_package }}"
+      - firewalld
     state: latest
 
 - name: Start firewalld and httpd (centos,rhel)
@@ -11,7 +14,7 @@
     state: started
     enabled: yes
   with_items:
-      - firewalld
+      - firewalld.service
       - "{{ apache_service }}"
 
 - name: Copy default file for site

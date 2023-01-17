@@ -38,7 +38,7 @@
       uid: 1020
       shell: /bin/bash
       create_home: true
-      groups: root, wheel
+      groups: root
       append: yes
 
   - name: Add ssh key for cofe # to enable password less log in to server
