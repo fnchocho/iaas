@@ -1,6 +1,6 @@
 # This script is meant to run after boostrap.yml initial configuration run
 
-- name: Pre-task up date all servers
+- name: Up date all servers
   hosts: all
   become: true
   pre_tasks:

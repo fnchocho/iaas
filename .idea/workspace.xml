@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Update main_config file">
-      <change afterPath="$PROJECT_DIR$/roles/web_servers/files/default_site.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_setup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/base_setup.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/inventory.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventory.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/roles/db_servers/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/db_servers/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/roles/file_servers/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/file_servers/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/roles/web_servers/files/default_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/default_site.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/roles/web_servers/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/web_servers/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main_config.yml" afterDir="false" />
-    </list>
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Update main_config files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,13 +115,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Make updates as pre-task">
-      <created>1672955792695</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1672955792695</updated>
     </task>
     <task id="LOCAL-00028" summary="Make inventory.yml file">
       <created>1672956279265</created>
@@ -471,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673906897065</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Update main_config files">
+      <created>1673908760957</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1673908760957</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create file play added" />
     <MESSAGE value="modify create file task" />
     <MESSAGE value="Create add ansible directory task" />
     <MESSAGE value="Add owner and group to ansible directory" />
@@ -523,6 +510,7 @@
     <MESSAGE value="Breakdown playbook to major roles" />
     <MESSAGE value="Update role for web_servers" />
     <MESSAGE value="Update main_config file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update main_config file" />
+    <MESSAGE value="Update main_config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update main_config files" />
   </component>
 </project>
