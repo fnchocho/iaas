@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="mariadb name corrected and other plays cleaned">
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create welcome.txt file">
+      <change afterPath="$PROJECT_DIR$/roles/centos7/tasks/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,13 +120,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Make playbook a pre-task to update servers">
-      <created>1673641207413</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1673641207413</updated>
     </task>
     <task id="LOCAL-00033" summary="Rename playbook to base_setup">
       <created>1673641330913</created>
@@ -462,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673982246470</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Create welcome.txt file">
+      <created>1673988859199</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1673988859199</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add apache2 site file" />
     <MESSAGE value="Add new files" />
     <MESSAGE value="Sub classify servers" />
     <MESSAGE value="create web_servers.yml" />
@@ -514,6 +515,7 @@
     <MESSAGE value="Define apache_service variable" />
     <MESSAGE value="Eliminate redundant plays" />
     <MESSAGE value="mariadb name corrected and other plays cleaned" />
-    <option name="LAST_COMMIT_MESSAGE" value="mariadb name corrected and other plays cleaned" />
+    <MESSAGE value="Create welcome.txt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create welcome.txt file" />
   </component>
 </project>

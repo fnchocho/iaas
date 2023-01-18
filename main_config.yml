@@ -1,5 +1,11 @@
 # This script is meant to run after boostrap.yml initial configuration run
 
+- name: OS specific play - PRE
+  hosts: foreman_centos7
+  become: true
+  roles:
+    - centos7-pre
+
 - name: Pre-task up date all servers
   hosts: all
   become: true
@@ -15,6 +21,7 @@
   become: true
   roles:
     - base
+    - centos7
 
 - hosts: web_servers
   become: true
