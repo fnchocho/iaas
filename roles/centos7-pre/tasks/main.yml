@@ -1,8 +1,8 @@
-'''
+
 - name: Remove existing version of firefox
   command: yum remove firefox
 
-- name: Unlink firefox
+- name: Unlink firefoxq
   file:
     src: /usr/bin/firefox
     state: unlink
@@ -27,5 +27,3 @@
     dest: /usr/bin/firefox
     owner: root
     group: root
-
-'''

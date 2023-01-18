@@ -4,7 +4,7 @@
 - name: update all hosts
   package:
     update_cache: yes
-    changed_when: false          # Allow control over what is considered as change
+#   changed_when: false          # Allow control over what is considered as change
   ignore_errors: true
 
 - name: Create ansible home directory
@@ -13,7 +13,7 @@
     state: directory
     mode: '0755'
 
-- name: Create a welcome file in tmp directory
+- name: Create a welcome file in ansible directory
   file:
     path: /ansible/welcome.txt
     state: touch
