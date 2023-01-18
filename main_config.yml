@@ -21,7 +21,6 @@
   become: true
   roles:
     - base
-    - centos7
 
 - hosts: web_servers
   become: true

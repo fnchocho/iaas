@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create welcome.txt file">
-      <change afterPath="$PROJECT_DIR$/roles/centos7/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
-    </list>
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create centos7 role" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,13 +115,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Rename playbook to base_setup">
-      <created>1673641330913</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1673641330913</updated>
     </task>
     <task id="LOCAL-00034" summary="Rename playbook to base_setup">
       <created>1673641340266</created>
@@ -464,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673988859199</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Create centos7 role">
+      <created>1674060106891</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1674060106891</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -491,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add new files" />
     <MESSAGE value="Sub classify servers" />
     <MESSAGE value="create web_servers.yml" />
     <MESSAGE value="Add play to manage apache service" />
@@ -516,6 +510,7 @@
     <MESSAGE value="Eliminate redundant plays" />
     <MESSAGE value="mariadb name corrected and other plays cleaned" />
     <MESSAGE value="Create welcome.txt file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create welcome.txt file" />
+    <MESSAGE value="Create centos7 role" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create centos7 role" />
   </component>
 </project>
