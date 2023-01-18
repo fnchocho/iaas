@@ -7,6 +7,10 @@
 #   changed_when: false          # Allow control over what is considered as change
   ignore_errors: true
 
+- name: Install unzip
+  package:
+    name: unzip
+
 - name: Create ansible home directory
   file:
     path: /ansible
@@ -27,7 +31,5 @@
     mode: '0644'
   register: display_file_content
 
-- name: Install unzip
-  package:
-    name: unzip
+
 
