@@ -23,32 +23,3 @@
     group: root
     mode: 0440
 
-- name: Create ansible home directory
-  file:
-    path: /home/ansible
-    state: directory
-    mode: '0755'
-
-- name: Create a welcome file in tmp directory
-  file:
-    path: /tmp/welcome.txt
-    state: touch
-    mode: u=rwx,g=rw,o=rw
-
-- name: Write content in welcome.txt file
-  copy:
-    src: welcome.txt
-    dest: /tmp/welcome.txt
-    owner: root
-    mode: '0644'
-  register: display_file_content
-
-- name: Debug display content
-  debug:
-    var: display_file_content
-    verbosity: 2
-
-- name: Install unzip
-  package:
-    name: unzip
-

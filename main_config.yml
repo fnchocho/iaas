@@ -1,20 +1,15 @@
-# This script is meant to run after boostrap.yml initial configuration run
 
-- name: OS specific play - PRE
+- name: OS_common pre-config plays
+  hosts: all
+  become: true
+  roles:
+    - os_common_pre
+
+- name: CentOS7 pre-config plays
   hosts: foreman_centos7
   become: true
   roles:
     - centos7-pre
-
-- name: Pre-task up date all servers
-  hosts: all
-  become: true
-  pre_tasks:
-  - name: update all hosts
-    package:
-      update_cache: yes
-    changed_when: false          # Allow control over what is considered as change
-    ignore_errors: true
 
 - name: install base configuration
   hosts: all

@@ -1,0 +1,31 @@
+'''
+- name: Remove existing version of firefox
+  command: yum remove firefox
+
+- name: Unlink firefox
+  file:
+    src: /usr/bin/firefox
+    state: unlink
+
+- name: Create firefox backup
+  file:
+    src: /usr/bin/firefox
+    dest: /usr/bin/firefox_bak
+
+- name: Download latest version of firefox
+  unarchive:
+    src: http://ftp.mozilla.org/pub/firefox/releases/108.0/linux-x86_64/en-US/firefox-108.0.tar.bz2
+    dest: /usr/local/
+    remote_src: yes   # Downloaded from the internet
+    mode: 0755
+    owner: root
+    group: root
+
+- name: Create symbolic link and install firefox
+  file:
+    src: /usr/local/firefox/firefox
+    dest: /usr/bin/firefox
+    owner: root
+    group: root
+
+'''

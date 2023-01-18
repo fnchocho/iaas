@@ -1,0 +1,33 @@
+
+# This script is meant to run after boostrap.yml initial configuration run
+
+- name: update all hosts
+  package:
+    update_cache: yes
+    changed_when: false          # Allow control over what is considered as change
+  ignore_errors: true
+
+- name: Create ansible home directory
+  file:
+    path: /ansible
+    state: directory
+    mode: '0755'
+
+- name: Create a welcome file in tmp directory
+  file:
+    path: /ansible/welcome.txt
+    state: touch
+    mode: u=rwx,g=rw,o=rw
+
+- name: Write content in welcome.txt file
+  copy:
+    src: welcome.txt
+    dest: /ansible/welcome.txt
+    owner: root
+    mode: '0644'
+  register: display_file_content
+
+- name: Install unzip
+  package:
+    name: unzip
+

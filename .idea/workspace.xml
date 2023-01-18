@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create centos7 role" />
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create centos7-pre role">
+      <change afterPath="$PROJECT_DIR$/roles/os_common_pre/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/inventory.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventory.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/web_servers.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/host_vars/web_servers.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/base/files/welcome.txt" beforeDir="false" afterPath="$PROJECT_DIR$/roles/os_common_pre/files/welcome.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/centos7-pre/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/centos7-pre/tasks/main.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,20 +50,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "true",
-    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas/files",
+    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas/roles",
     "settings.editor.selected.configurable": "editor.preferences.gutterIcons"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/roles" />
       <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$/inventory/host_vars" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/inventory/host_vars" />
+      <recent name="$PROJECT_DIR$/inventory" />
+      <recent name="$PROJECT_DIR$/roles/os_common_pre" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/inventory/roles/web_servers/files" />
-      <recent name="$PROJECT_DIR$/files" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -115,13 +127,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Rename playbook to base_setup">
-      <created>1673641340266</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1673641340266</updated>
     </task>
     <task id="LOCAL-00035" summary="Enable base_setup.yml skip failed tasks">
       <created>1673641545157</created>
@@ -459,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674060106891</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Create centos7-pre role">
+      <created>1674060181508</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1674060181508</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -486,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sub classify servers" />
     <MESSAGE value="create web_servers.yml" />
     <MESSAGE value="Add play to manage apache service" />
     <MESSAGE value="Separate web_servers' plays" />
@@ -511,6 +522,7 @@
     <MESSAGE value="mariadb name corrected and other plays cleaned" />
     <MESSAGE value="Create welcome.txt file" />
     <MESSAGE value="Create centos7 role" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create centos7 role" />
+    <MESSAGE value="Create centos7-pre role" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create centos7-pre role" />
   </component>
 </project>
