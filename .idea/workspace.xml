@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create os_common pre role">
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Clean os_common pre tasks">
+      <change afterPath="$PROJECT_DIR$/collections/requirements.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_setup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/base_setup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/centos7-pre/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/centos7-pre/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/os_common_pre/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/os_common_pre/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,20 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Add condition for rhel8 as major version">
-      <created>1673641846808</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1673641846808</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Create play to add user cofe">
-      <created>1673644145848</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1673644145848</updated>
     </task>
     <task id="LOCAL-00038" summary="Create play to add user cofe">
       <created>1673644250045</created>
@@ -467,7 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674072575458</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Add os_common pre tasks">
+      <created>1674077800941</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1674077800941</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Clean os_common pre tasks">
+      <created>1674078123977</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1674078123977</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,8 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add play to manage apache service" />
-    <MESSAGE value="Separate web_servers' plays" />
     <MESSAGE value="Add sudoer_cofe config file" />
     <MESSAGE value="fix file name typo" />
     <MESSAGE value="Add fidelis and cofe as remote users" />
@@ -519,6 +516,8 @@
     <MESSAGE value="Create centos7 role" />
     <MESSAGE value="Create centos7-pre role" />
     <MESSAGE value="Create os_common pre role" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create os_common pre role" />
+    <MESSAGE value="Add os_common pre tasks" />
+    <MESSAGE value="Clean os_common pre tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean os_common pre tasks" />
   </component>
 </project>
