@@ -1,0 +1,15 @@
+- name: Install collections and roles together
+  community.general.ansible_galaxy_install:
+    type: both
+    requirements_file: requirements.yml
+
+
+- name: Install and configure chrony
+  include_role:
+      name: aisbergg.chrony
+  vars:
+      - chrony_timezone: America/New_York
+      - chrony_config_server: time.cloudflare.com
+      - chrony_service_state: started
+      - chrony_service_enable: true
+      - chrony_service_restart_on_change: true

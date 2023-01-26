@@ -1,6 +1,7 @@
 - name: Create user cofe
   ansible.builtin.user:
     name: cofe
+    password: "{{ cofe_user_passwd }}"
     comment: Cofe Vargo
     uid: 1020
     shell: /bin/bash
@@ -23,13 +24,4 @@
     group: root
     mode: 0440
 
-- name: Install and configure chrony
-  ansible-galaxy install:
-    include_role: aisbergg.chrony
-    vars:
-      - chrony_timezone: America/New_York
-      - chrony_config_server: time.cloudflare.com
-    chrony_service_state: started
-    chrony_service_enable: true
-    chrony_service_restart_on_change: true
 

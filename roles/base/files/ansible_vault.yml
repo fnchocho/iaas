@@ -1,0 +1,4 @@
+
+- ansible_ssh_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH3Db/5f2cXO4n3+NqALwYM05ITMUxMtkflrz9L1QnwP ansible
+- cofe_user_passwd: vasvas123
+

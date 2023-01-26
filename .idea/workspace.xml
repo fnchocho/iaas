@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Clean os_common pre tasks">
-      <change afterPath="$PROJECT_DIR$/collections/requirements.yml" afterDir="false" />
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create collections">
+      <change afterPath="$PROJECT_DIR$/ansible_galaxy_install.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mypassword.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/base/files/ansible_vault.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vault_play.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,23 +49,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "true",
-    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas/roles",
+    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas",
     "settings.editor.selected.configurable": "editor.preferences.gutterIcons"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/roles" />
       <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$/inventory/host_vars" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/roles/base/files" />
+      <recent name="$PROJECT_DIR$/roles/base/templates" />
+      <recent name="$PROJECT_DIR$/roles/base/files2" />
+      <recent name="$PROJECT_DIR$/roles/base" />
       <recent name="$PROJECT_DIR$/inventory/host_vars" />
-      <recent name="$PROJECT_DIR$/inventory" />
-      <recent name="$PROJECT_DIR$/roles/os_common_pre" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/inventory/roles/web_servers/files" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -122,13 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Create play to add user cofe">
-      <created>1673644250045</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1673644250045</updated>
     </task>
     <task id="LOCAL-00039" summary="Correct play error and remove append group for cofe user">
       <created>1673644386777</created>
@@ -466,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674078123977</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Create collections">
+      <created>1674145521812</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1674145521812</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add sudoer_cofe config file" />
     <MESSAGE value="fix file name typo" />
     <MESSAGE value="Add fidelis and cofe as remote users" />
     <MESSAGE value="Add fidelis as remote users" />
@@ -518,6 +521,7 @@
     <MESSAGE value="Create os_common pre role" />
     <MESSAGE value="Add os_common pre tasks" />
     <MESSAGE value="Clean os_common pre tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean os_common pre tasks" />
+    <MESSAGE value="Create collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create collections" />
   </component>
 </project>
