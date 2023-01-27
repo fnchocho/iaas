@@ -1,13 +1,14 @@
 - name: Create user cofe
   ansible.builtin.user:
     name: cofe
-    password: "{{ cofe_user_passwd }}"
+#    password: "{{ cofe_user_passwd }}"
     comment: Cofe Vargo
     uid: 1020
     shell: /bin/bash
     create_home: true
     groups: root
     append: yes
+  ignore_errors: true
 
 - name: Add ssh key for cofe # to enable password less log in to server
   tags: always
@@ -16,12 +17,23 @@
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH3Db/5f2cXO4n3+NqALwYM05ITMUxMtkflrz9L1QnwP ansible"
 
 - name: Add sudoers file for cofe
-  tags: always
+  tags: cofe
   copy:
     src: sudoer_cofe
     dest: /etc/sudoers.d/cofe
     owner: root
     group: root
-    mode: 0440
+    mode: 0644
+  ignore_errors: true
+
+- name: Generate sshd_config file from template
+  tags: ssh
+  template:
+    remote_src: "{{ ssh_template_file }}"
+    dest: /etc/ssh/sshd_config
+    owner: root
+    group: root
+    mode: 0644
+    modify: restart_sshd
 
 

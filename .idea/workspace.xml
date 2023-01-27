@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create collections">
-      <change afterPath="$PROJECT_DIR$/ansible_galaxy_install.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mypassword.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles/base/files/ansible_vault.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vault_play.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/base/templates/handlers/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/requirements.yml" beforeDir="false" afterPath="$PROJECT_DIR$/collections/requirements.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/host_vars/192.168.202.131.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/host_vars/192.168.202.131.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/host_vars/192.168.202.135.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/host_vars/192.168.202.135.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/host_vars/192.168.202.136.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/host_vars/192.168.202.136.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/base/files/ansible_vault.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/files/ansible_vault.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,13 +127,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Correct play error and remove append group for cofe user">
-      <created>1673644386777</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1673644386777</updated>
     </task>
     <task id="LOCAL-00040" summary="Correct play error and remove cofe group">
       <created>1673644619264</created>
@@ -470,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674145521812</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Create collections">
+      <created>1674750053280</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1674750053280</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
