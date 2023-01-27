@@ -1,0 +1,21 @@
+- name: Install samba and firewalld
+  tags: samba
+  package:
+    name:
+      - samba
+      - firewalld
+    state: latest
+
+- name: Start firewalld
+  tags: firewalld
+  service:
+    name: firewalld
+    state: started
+    enabled: yes
+
+- name: open samba port
+  ansible.posix.firewalld:
+      port: 445/tcp
+      permanent: yes
+      state: enabled
+  notify: restart_firewalld

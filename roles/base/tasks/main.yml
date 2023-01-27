@@ -35,5 +35,6 @@
     group: root
     mode: 0644
     modify: restart_sshd
+  ignore_errors: true
 
 
