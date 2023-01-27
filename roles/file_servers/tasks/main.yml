@@ -18,4 +18,5 @@
       port: 445/tcp
       permanent: yes
       state: enabled
+      immediate: yes
   notify: restart_firewalld
