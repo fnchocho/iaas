@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add template creation play and files">
-      <change afterPath="$PROJECT_DIR$/inventory/host_vars/file_servers.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles/file_servers/tasks/main.yml" afterDir="false" />
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Add play to open samba port and handlers">
+      <change afterPath="$PROJECT_DIR$/files/cofe_user_password.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/group_vars/all.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/file_servers/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/web_servers/files/default_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/roles/web_servers/files/default_site.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/web_servers/handlers/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/web_servers/handlers/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/web_servers/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/web_servers/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,23 +50,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "true",
-    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas",
+    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas/roles/file_servers",
     "settings.editor.selected.configurable": "editor.preferences.gutterIcons"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/roles/file_servers" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/roles" />
       <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$/inventory/host_vars" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/inventory/group_vars" />
       <recent name="$PROJECT_DIR$/roles/file_servers/tasks" />
       <recent name="$PROJECT_DIR$/roles/base/files" />
       <recent name="$PROJECT_DIR$/roles/base/templates" />
       <recent name="$PROJECT_DIR$/roles/base/files2" />
-      <recent name="$PROJECT_DIR$/roles/base" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -124,20 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Correct play error and remove home cofe">
-      <created>1673644691979</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1673644691979</updated>
-    </task>
-    <task id="LOCAL-00042" summary="create play to configure web_servers">
-      <created>1673646881557</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1673646881557</updated>
     </task>
     <task id="LOCAL-00043" summary="create web_servers inventory">
       <created>1673647432912</created>
@@ -468,7 +458,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674849801782</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Add play to open samba port and handlers">
+      <created>1674855561474</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1674855561474</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Add play to open samba port and handlers">
+      <created>1674856274392</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1674856274392</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add fidelis and cofe as remote users" />
     <MESSAGE value="Add fidelis as remote users" />
     <MESSAGE value="Add cofe as remote users" />
     <MESSAGE value="Create bootstrap script to handle initial setup" />
@@ -520,6 +523,7 @@
     <MESSAGE value="Clean os_common pre tasks" />
     <MESSAGE value="Create collections" />
     <MESSAGE value="Add template creation play and files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add template creation play and files" />
+    <MESSAGE value="Add play to open samba port and handlers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add play to open samba port and handlers" />
   </component>
 </project>

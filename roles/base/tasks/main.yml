@@ -1,13 +1,16 @@
+# Use hash to create a password for user, otherwise your system will not allow you to log in
 - name: Create user cofe
+  vars:
+    password: "{{ cofe_user_password }}"
   ansible.builtin.user:
     name: cofe
-#    password: "{{ cofe_user_passwd }}"
     comment: Cofe Vargo
-    uid: 1020
     shell: /bin/bash
     create_home: true
     groups: root
-    append: yes
+    append: true
+    state: present
+    password: "{{ password | password_hash('sha512') }}"
   ignore_errors: true
 
 - name: Add ssh key for cofe # to enable password less log in to server
@@ -36,5 +39,13 @@
     mode: 0644
     modify: restart_sshd
   ignore_errors: true
+
+- name: Set a fact
+  set_fact:
+    user_password: password
+
+- name: Show custom fact
+  debug:
+    msg: "{{ cofe_user_password }}"
 
 

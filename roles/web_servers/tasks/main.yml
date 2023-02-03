@@ -26,3 +26,10 @@
       group: root
       mode: '0644'
   notify: restart_apache
+
+- name: Manage apache process
+  tags: apache,httpd,centos,rhel
+  service:
+    name: "{{ apache_service }}"
+    state: started
+    enabled: yes
