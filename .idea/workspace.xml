@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create group_var all.yml to hold vault secrets">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/requirements.yml" beforeDir="false" afterPath="$PROJECT_DIR$/collections/requirements.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/cofe_user_password.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/group_vars/all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/group_vars/all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/base/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/base/tasks/main.yml" afterDir="false" />
-    </list>
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create set fact play for all servers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,13 +119,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00044" summary="create web_servers inventory">
-      <created>1673647627622</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1673647627622</updated>
     </task>
     <task id="LOCAL-00045" summary="create file play added">
       <created>1673648253098</created>
@@ -470,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675448972992</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Create set fact play for all servers">
+      <created>1675717077208</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1675717077208</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +490,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add cofe as remote users" />
     <MESSAGE value="Create bootstrap script to handle initial setup" />
     <MESSAGE value="Create main ansible config file" />
     <MESSAGE value="Create /base/task/main.yml file" />
@@ -522,6 +514,7 @@
     <MESSAGE value="Add template creation play and files" />
     <MESSAGE value="Add play to open samba port and handlers" />
     <MESSAGE value="Create group_var all.yml to hold vault secrets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create group_var all.yml to hold vault secrets" />
+    <MESSAGE value="Create set fact play for all servers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create set fact play for all servers" />
   </component>
 </project>

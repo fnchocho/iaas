@@ -4,7 +4,7 @@
 - name: update all hosts
   package:
     update_cache: yes
-    changed_when: false          # Allow control over what is considered as change
+  # changed_when: false          # Allow control over what is considered as change
   ignore_errors: true
 
 - name: Install unzip
@@ -34,10 +34,11 @@
 # Display some facts about each server
 - name: Collect facts about server
   set_fact:
-    one: Hello
+    one: 'Hello, you are running'
     two: "{{ ansible_distribution }}"
+    three: "{{ ansible_distribution_version }}"
 
 - name: Display facts about server
   debug:
-    msg: "{{ one }}--{{ two }}"
+    msg: "{{ one }}-{{ two }}-{{ three }}"
 
