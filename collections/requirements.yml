@@ -1,9 +1,9 @@
-''' Collections are distribution format for Ansible content that can include playbooks, roles, modules, and plugins. '''
+# Collections are distribution format for Ansible content that can include playbooks, roles, modules, and plugins.
 
-- collections:
-    name: community.general
-    source: https://ansible.com
-     version: 4.8.0
+collections:
+    - name: community.general
+      source: https://ansible.com
+      version: 4.8.0
 
 
 

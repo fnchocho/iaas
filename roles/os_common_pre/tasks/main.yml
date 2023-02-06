@@ -4,7 +4,7 @@
 - name: update all hosts
   package:
     update_cache: yes
-#   changed_when: false          # Allow control over what is considered as change
+    changed_when: false          # Allow control over what is considered as change
   ignore_errors: true
 
 - name: Install unzip
@@ -31,5 +31,13 @@
     mode: '0644'
   register: display_file_content
 
+# Display some facts about each server
+- name: Collect facts about server
+  set_fact:
+    one: Hello
+    two: "{{ ansible_distribution }}"
 
+- name: Display facts about server
+  debug:
+    msg: "{{ one }}--{{ two }}"
 

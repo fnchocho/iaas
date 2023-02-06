@@ -40,12 +40,30 @@
     modify: restart_sshd
   ignore_errors: true
 
-- name: Set a fact
-  set_fact:
-    user_password: password
+# create another user called simone
+- name: Create user simone
+  vars:
+    password: 'vasvas123'
+  ansible.builtin.user:
+    name: simone
+    shell: /bin/bash
+    create_home: true
+    state: present
+    password: "{{ password | password_hash('sha512') }}"
+  ignore_errors: true
 
-- name: Show custom fact
-  debug:
-    msg: "{{ cofe_user_password }}"
+# create another user called Jssmine
+- name: Create user Jasmine
+  vars:
+    password: 'Atenorth'
+  ansible.builtin.user:
+    name: jasmine
+    shell: /bin/bash
+    create_home: true
+    state: present
+    password: "{{ password | password_hash('sha512') }}"
+  ignore_errors: true
+
+
 
 
