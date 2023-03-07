@@ -16,7 +16,7 @@
      ansible.builtin.yum:
         name: dnf
         state: present
-     when: dnf_output.rc != 0
+     when: version.rc != 0
 
   
 
