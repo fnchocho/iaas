@@ -6,10 +6,15 @@
   become: true
   tasks:
    - name: Check dnf version
-     command: "dnf --version"
-     register: dnf_output
-     ignore_errors: true
+     command:
+        cmd: dnf --version
+        register: dnf_output
 
    - name: Install dnf
-     command: "yum install -y dnf"
+     yum:
+        name: dnf
+        state: present
      when: dnf_output.rc != 0
+
+
+
