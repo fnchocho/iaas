@@ -1,0 +1,15 @@
+
+# This script is meant to run after boostrap.yml initial configuration run
+-
+- name: Verify dnf version
+  hosts: all
+  become: true
+  tasks:
+   - name: Check dnf version
+     command: "dnf --version"
+     register: dnf_output
+     ignore_errors: true
+
+   - name: Install dnf
+     command: "yum install -y dnf"
+     when: dnf_output.rc != 0
