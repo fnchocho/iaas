@@ -9,7 +9,9 @@
 
 - name: Install unzip
   package:
-    name: unzip
+    name:
+      - unzip
+      - dnf
 
 - name: Create ansible home directory
   file:
@@ -30,6 +32,21 @@
     owner: root
     mode: '0644'
   register: display_file_content
+
+# Gather useful server variables
+- name: Gather server facts
+  setup:
+    filter:
+      - ansible_distribution
+      - ansible_machine_id
+      - ansible_default_ipv4
+      - ansible_*_mb
+  register: host_facts
+ 
+
+- name: Display server facts
+  debug:
+    var: host_facts
 
 # Display some facts about each server
 - name: Collect facts about server
