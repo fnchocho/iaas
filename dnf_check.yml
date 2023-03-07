@@ -1,6 +1,6 @@
 
 # This script is meant to run after boostrap.yml initial configuration run
--
+
 - name: Verify dnf version
   hosts: all
   become: true
