@@ -8,10 +8,6 @@
         cmd: dnf --version
      register: dnf_output
 
-- name: Show result
-  ansible.builtin.debug:
-      msg: '{{ dnf_output }}'
-
 - name: Install dnf
   ansible.builtin.yum:
       name: dnf
