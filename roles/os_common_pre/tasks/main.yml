@@ -8,21 +8,21 @@
   ignore_errors: true
 
 - name: Install base packages
-  package:
+  yum:
     name:
       - unzip
       - dnf
 
 - name: Verify dnf package is installed
   tasks:
-    - name: Check dnf package
-      command: "dnf --version"
-      register: dnf_output
-      ignore error: true
+   - name: Check dnf version
+     command: "dnf --version"
+     register: dnf_output
+     ignore_errors: true
 
-    - name: Install dnf package
-      command: "yum install -y dnf"
-      when: dnf_output.rc != 0
+   - name: Install dnf
+     command: "yum install -y dnf"
+     when: dnf_output.rc != 0
 
 - name: Create ansible home directory
   file:
