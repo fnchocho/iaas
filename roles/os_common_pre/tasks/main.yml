@@ -13,6 +13,17 @@
       - unzip
       - dnf
 
+- name: Verify that dnf package is installed
+  tasks:
+    - name: Check dnf package
+      command: "dnf --version"
+      register: dnf_output
+      ignore error: true
+
+    - name: Install dnf package
+      command: "yum install -y dnf"
+      when: dnf_output.rc != 0
+
 - name: Create ansible home directory
   file:
     path: /ansible
