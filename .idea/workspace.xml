@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Create set fact play for all servers" />
+    <list default="true" id="19c963a3-774b-49ba-848e-bf74bb93fe18" name="Changes" comment="Romove debug play in playbook">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/os_common_pre/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/os_common_pre/tasks/main.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,14 +44,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "true",
-    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas/roles/file_servers",
+    "last_opened_file_path": "/home/fidelis/PycharmProjects/iaas",
     "settings.editor.selected.configurable": "editor.preferences.gutterIcons"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/roles/file_servers" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/roles/file_servers" />
       <recent name="$PROJECT_DIR$/roles" />
       <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$/inventory/host_vars" />
@@ -119,118 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671226080362</updated>
-    </task>
-    <task id="LOCAL-00045" summary="create file play added">
-      <created>1673648253098</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1673648253098</updated>
-    </task>
-    <task id="LOCAL-00046" summary="modify create file task">
-      <created>1673648464720</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1673648464720</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Create add ansible directory task">
-      <created>1673723315465</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1673723315465</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Add owner and group to ansible directory">
-      <created>1673723689086</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1673723689086</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Add owner and group to ansible directory">
-      <created>1673723948540</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1673723948540</updated>
-    </task>
-    <task id="LOCAL-00050" summary="No change">
-      <created>1673724876997</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1673724876998</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Add apache2 site file">
-      <created>1673726986819</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1673726986819</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Add apache2 site file">
-      <created>1673728166027</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1673728166028</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Add new files">
-      <created>1673728733152</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1673728733152</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Sub classify servers">
-      <created>1673732177634</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1673732177634</updated>
-    </task>
-    <task id="LOCAL-00055" summary="create web_servers.yml">
-      <created>1673732701774</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1673732701775</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Add play to manage apache service">
-      <created>1673808426269</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1673808426270</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Add play to manage apache service">
-      <created>1673809667578</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1673809667580</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Separate web_servers' plays">
-      <created>1673893704337</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1673893704338</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Separate web_servers' plays">
-      <created>1673893724057</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1673893724057</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Add sudoer_cofe config file">
-      <created>1673895791289</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1673895791289</updated>
     </task>
     <task id="LOCAL-00061" summary="fix file name typo">
       <created>1673895828167</created>
@@ -463,7 +354,119 @@
       <option name="project" value="LOCAL" />
       <updated>1675717077208</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Clean set fact play for all servers">
+      <created>1675717693137</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1675717693137</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Include dnf package install">
+      <created>1678194894569</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1678194894569</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Change play to base package install">
+      <created>1678195447364</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1678195447365</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Include ipv4 in server facts to display">
+      <created>1678195858090</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1678195858090</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Include ipv4 in server facts to display">
+      <created>1678196474162</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1678196474162</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Include dfn install verification play">
+      <created>1678197583439</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1678197583439</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Include dfn install verification play cleaned">
+      <created>1678199230199</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1678199230199</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Indent dfn install verification play">
+      <created>1678200455890</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1678200455890</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Indent dfn install verification play">
+      <created>1678200504642</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1678200504642</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Indent dfn install verification play">
+      <created>1678200576051</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1678200576051</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Add dfn install verification playbook">
+      <created>1678201079968</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1678201079968</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Fix dfn install verification playbook">
+      <created>1678201154529</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1678201154529</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Remove ignore_errors in playbook">
+      <created>1678204231755</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1678204231755</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Indent plays in playbook">
+      <created>1678204681858</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1678204681858</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Indent plays in playbook">
+      <created>1678204912947</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1678204912947</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Romove debug play in playbook">
+      <created>1678206479615</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1678206479615</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -490,18 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create bootstrap script to handle initial setup" />
-    <MESSAGE value="Create main ansible config file" />
-    <MESSAGE value="Create /base/task/main.yml file" />
-    <MESSAGE value="Create web_servers play and host_vars" />
-    <MESSAGE value="Create main task file for file_servers" />
-    <MESSAGE value="Create main task file for web_servers" />
-    <MESSAGE value="Breakdown playbook to major roles" />
-    <MESSAGE value="Update role for web_servers" />
-    <MESSAGE value="Update main_config file" />
-    <MESSAGE value="Update main_config files" />
-    <MESSAGE value="Add handlers file for httpd" />
-    <MESSAGE value="Define apache_service variable" />
     <MESSAGE value="Eliminate redundant plays" />
     <MESSAGE value="mariadb name corrected and other plays cleaned" />
     <MESSAGE value="Create welcome.txt file" />
@@ -515,6 +506,18 @@
     <MESSAGE value="Add play to open samba port and handlers" />
     <MESSAGE value="Create group_var all.yml to hold vault secrets" />
     <MESSAGE value="Create set fact play for all servers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create set fact play for all servers" />
+    <MESSAGE value="Clean set fact play for all servers" />
+    <MESSAGE value="Include dnf package install" />
+    <MESSAGE value="Change play to base package install" />
+    <MESSAGE value="Include ipv4 in server facts to display" />
+    <MESSAGE value="Include dfn install verification play" />
+    <MESSAGE value="Include dfn install verification play cleaned" />
+    <MESSAGE value="Indent dfn install verification play" />
+    <MESSAGE value="Add dfn install verification playbook" />
+    <MESSAGE value="Fix dfn install verification playbook" />
+    <MESSAGE value="Remove ignore_errors in playbook" />
+    <MESSAGE value="Indent plays in playbook" />
+    <MESSAGE value="Romove debug play in playbook" />
+    <option name="LAST_COMMIT_MESSAGE" value="Romove debug play in playbook" />
   </component>
 </project>

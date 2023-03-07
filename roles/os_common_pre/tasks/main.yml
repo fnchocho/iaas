@@ -9,7 +9,9 @@
 
 - name: Install base packages
   yum:
-    name:
+    name: "{{ packages }}"
+    vars:
+      packages:
       - unzip
       - dnf
 
