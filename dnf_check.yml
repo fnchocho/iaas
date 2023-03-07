@@ -6,13 +6,21 @@
    - name: Check dnf version
      ansible.builtin.command:
         cmd: dnf --version
-     register: dnf_output
+     register: version
 
-- name: Install dnf
-  ansible.builtin.yum:
-      name: dnf
-      state: present
-  when: dnf_output.rc != 0
+   - name: Show result
+     ansible.builtin.debug:
+        msg: '{{ version }}'
+
+   - name: Install dnf
+     ansible.builtin.yum:
+        name: dnf
+        state: present
+     when: dnf_output.rc != 0
+
+  
+
+
 
 
 
