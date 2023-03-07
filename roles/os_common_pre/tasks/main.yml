@@ -7,7 +7,7 @@
   # changed_when: false          # Allow control over what is considered as change
   ignore_errors: true
 
-- name: Install unzip
+- name: Install base packages
   package:
     name:
       - unzip
