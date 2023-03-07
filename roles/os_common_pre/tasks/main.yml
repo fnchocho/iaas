@@ -13,7 +13,7 @@
       - unzip
       - dnf
 
-- name: Verify that dnf package is installed
+- name: Verify dnf package is installed
   tasks:
     - name: Check dnf package
       command: "dnf --version"
