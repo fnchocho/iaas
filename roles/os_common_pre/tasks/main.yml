@@ -54,8 +54,9 @@
     one: 'Hello, you are running'
     two: "{{ ansible_distribution }}"
     three: "{{ ansible_distribution_version }}"
+    four: "{{ ansible_default_ipv4 }}"
 
 - name: Display facts about server
   debug:
-    msg: "{{ one }}-{{ two }}-{{ three }}"
+    msg: "{{ one }}-{{ two }}-{{ three }}--{{four}}"
 
