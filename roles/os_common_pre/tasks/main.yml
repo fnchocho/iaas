@@ -18,13 +18,16 @@
 - name: Verify dnf version
   tasks:
    - name: Check dnf version
-     command: "dnf --version"
-     register: dnf_output
+     yum:
+     cmd: dnf --version
+     register: dnf-version
      ignore_errors: true
 
    - name: Install dnf
-     command: "yum install -y dnf"
-     when: dnf_output.rc != 0
+     yum:
+        name: dnf
+        state: present
+     when: dnf_version.rc != 0
 
 - name: Create ansible home directory
   file:
