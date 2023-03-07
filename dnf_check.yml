@@ -6,15 +6,19 @@
   become: true
   tasks:
    - name: Check dnf version
-     command:
+     ansible.builtin.command:
         cmd: dnf --version
-        register: dnf_output
+     register: dnf_output
 
-   - name: Install dnf
-     yum:
-        name: dnf
-        state: present
-     when: dnf_output.rc != 0
+- name: Show result
+  ansible.builtin.debug:
+      msg: '{{ dnf_output }}'
+
+- name: Install dnf
+  ansible.builtin.yum:
+      name: dnf
+      state: present
+  when: dnf_output.rc != 0
 
 
 
