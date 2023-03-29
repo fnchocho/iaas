@@ -1,0 +1,15 @@
+- name: Gather satellite facts
+  hosts: https://vcsatellite.vmhi.local
+  Collections: redhat.satellite
+  tasks:
+    - name: satellite_facts
+      gather_facts: true
+      setup:
+      register: satellite_facts
+
+    - name: display satellite_facts
+      debug:
+        var: satellite_facts
+
+
+
